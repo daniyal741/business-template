@@ -17,28 +17,108 @@ html,body{
     position: relative;
 }
 
-@media screen and (max-width:1440px){
+@media screen and (max-width:1640px){
     
 .logo{
 
     width: 100%;
     color: #F7A78B;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 2.5rem;
+    background-color: white;
+    position: relative;
+    z-index: 100000;
+
     
 }
 .logo p{
 
     font-size: 24px;
-    padding: 1.5em 2em;
     text-transform: uppercase;
     font-family: myriad-pro, sans-serif;
     font-style: normal;
     font-weight: 100;
+    width: 90%;
 
 
 }
+.hamburger{
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    width: max-content;
+    display: none;
+
+
+}
+.hamburger .line{
+    background-color: black;
+    height: 1px;
+    width: 22px;
+    
+}
+.line::before,.line::after{
+
+    content: '';
+    position: absolute;
+    background-color: black;
+    height: 1px;
+    width: 22px;
+    
+}
+.line::before{
+
+    margin-top: -6px;
+
+}
+.line::after{
+
+    margin-top: 6px;
+
+}
+
+.cross{
+
+    display: flex;
+    width: max-content;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: pointer;
+    display: none;   
+
+
+  }
+  .diagonal{
+
+      background-color: transparent;
+      height: 3px;
+      width: 24px;
+  }
+  .diagonal::before, .diagonal::after{
+  
+      content: '';
+      position: absolute;
+      background-color: black;
+      height: 1px;
+      width: 18px;
+  
+  }  
+   .diagonal::before{
+
+      transform: rotate(45deg) translate(5px,-5px);
+
+  }
+   .diagonal::after{
+
+      transform: rotate(-45deg) translate(5px,5px);
+
+  }
 .container{
 
-    background: url('../images/main.jpg') rgba(0, 0, 0, 0.1);
+    background: url('../images/main.jpg') rgba(0, 0, 0, 0.4);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -46,6 +126,7 @@ html,body{
     width: 100%;
     height: 60vh;
     position: relative;
+
 
 
 }
@@ -56,6 +137,9 @@ header{
     position: sticky;
     top: 0;
     padding: 0 0 0 2rem;
+    z-index: 10;
+    transition: all ease-in-out 0.5s;
+
     
 }
 header ul{
@@ -101,7 +185,7 @@ header ul li a:hover{
 .main-heading h1{
 
     color: white;
-    font-size: 52px;
+    font-size: 48px;
     text-transform: uppercase;
     font-family: 'Baskervville', serif;
     font-weight: 400;
@@ -113,7 +197,7 @@ header ul li a:hover{
 .main-heading p{
 
     color: #F17A45;
-    font-size: 30px;
+    font-size: 28px;
     text-transform: uppercase;
     font-family: 'Baskervville', serif;
     font-weight: 400;
@@ -127,31 +211,32 @@ header ul li a:hover{
 
     .team{
 
+        padding: 5em 2em;
 
     }
     .team h1{
 
-        font-size: 36px;
+        font-size: 32px;
         text-transform: uppercase;
         font-family: 'Baskervville', serif;
-        font-weight: 400;
+        font-weight: bold;
         letter-spacing: 2px;
         color: #BF5E34;
         position: relative;
         text-align: center;
-        margin: 1em;
+        margin: 1.5em 0;
         
     
     }
     .team h1::before{
 
         content: '';
-        width: 5em;
+        width: 8em;
         height: 1px;
         background-color: #BF5E34;
         position: absolute;
-        bottom: -5px;
-        transform: translateX(50%);
+        bottom: -15px;
+        transform: translateX(25%);
     
     }
     .team p{
@@ -162,19 +247,105 @@ header ul li a:hover{
         font-family: Helvetica, sans-serif;
     }
 
+    /* MEMEBERS */
+
 }
 
 @media screen and (max-width:700px){
     
+    .logo{
+
+        padding: 1.5rem 0rem;
+    }
+    .logo p{
+
+        font-size: 1.2em;
+        width: 80%;
+
+    }
+    .hamburger{
+
+        display: flex;
+    }
+   
     header{
 
-        
+        padding: 0;
+        display: none; 
+        transform: translateY(-100%);  
+
+
     }
-    /* header ul{
+    header ul{
         flex-flow: column nowrap;
         justify-content: center;
-        align-items: center;
-    } */
+        align-items: center;   
+    }
+   
+   
+    .main-heading h1{
+
+        font-size: 2em;
+
+    }
+    .main-heading p{
+
+        font-size: 1.1em;
+
+    }
 
 
+    /* TEAMS */
+
+    .team{
+
+        padding: 2rem 0rem;
+
+    }
+    .team h1{
+
+        font-size: 1.5em;
+    }
+
+    .team h1::before{
+
+        width: 8em;
+        height: 1px;
+        bottom: -15px;
+    
+    }
+    .team p{
+
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width:425px){
+
+    .logo p{
+
+        font-size: 1.1em;
+    }
+    .main-heading{
+
+        right: auto;
+        left: 0;
+        bottom: 10%;
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+        width: 100%;
+        padding: 0;
+    }
+   
+
+    /* TEAMS */
+
+    .team h1{
+        font-size: 1.2em;
+    }
+    .team p{
+
+        font-size: 0.9em;
+    }
 }
