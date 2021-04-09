@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
 
+@font-face {
+    font-family: VaniBold;
+    src: url('../fonts/Vanib.ttf');
+}
 
 *{
 
@@ -298,7 +302,36 @@ nav ul li a:hover{
 
     }
     
+    /* COUNT */
 
+    .count{
+
+        display: flex;
+        justify-content: space-evenly;
+        background-color: #0A2D35;
+        padding: 4em;
+        margin: 0 0 2em 0;
+    }
+    .count div{
+
+        text-align: center;
+    }
+    .count span{
+
+        font-family: VaniBold;
+        font-size: 46px;
+        color: #995437;
+
+
+    }
+    .count p{
+
+        font-family: myriad-pro, sans-serif;
+        color: white;
+        font-size: 12px;
+        letter-spacing: 2px;
+
+    }
 
 }
 @media screen and (max-width:1024px){
@@ -343,6 +376,18 @@ nav ul li a:hover{
       height: 200px;
 
   }
+
+  /* COUNT */
+
+    .count{
+
+        flex-flow: row wrap;
+    }
+    .count div{
+
+        width: 40%;
+        padding: 1rem 0;
+    }
 
 }
 @media screen and (max-width:700px){
@@ -429,6 +474,19 @@ nav ul li a:hover{
     }
 
 }
+@media screen and (max-width:500px){
+
+    .count{
+
+        padding: 1rem;
+    }
+    .count div{
+
+        width: 50%;
+        padding: 1rem 0;
+    }    
+
+}
 
 @media screen and (max-width:425px){
 
@@ -477,5 +535,18 @@ nav ul li a:hover{
     .member div p{
 
         width: 90%;
+    }
+
+    /* COUNT */
+
+    .count span{
+
+        font-size: 36px;
+
+    }
+    .count p{
+
+        font-size: 10px;
+        
     }
 }
