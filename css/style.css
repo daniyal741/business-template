@@ -247,10 +247,90 @@ header ul li a:hover{
         font-family: Helvetica, sans-serif;
     }
 
-    /* MEMEBERS */
+    /* MEMBERS */
+
+    .members{
+
+        display: flex;
+        padding: 3em 0;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .member{
+
+        padding: 1.5em 1.5rem;
+        display: flex;
+        flex-flow: column nowrap;
+        width: 27%;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .member img{
+
+        width: 100%;
+        object-fit: cover;
+        height: 320px;
+
+    }
+    .member div{
+        width: 100%;
+    }
+    .member div p{
+
+        margin: auto;
+        font-family: Helvetica, sans-serif;
+        font-weight: 500;
+        padding-top: 1rem;
+        font-size: 15px;
+        width: 80%;
+    }
+    .member div .member-name {
+
+        font-size: 20px;
+
+    }
+    
+
 
 }
+@media screen and (max-width:1024px){
 
+      /* Members */
+
+      .member{
+
+        width: 25%;
+        
+      }
+      .member img{
+
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+
+    }
+
+}
+@media screen and (max-width:768px){
+
+    /* Members */
+
+    .member{
+
+      width: 30%;
+      
+    }
+    .member img{
+
+      width: 100%;
+      object-fit: cover;
+      height: 200px;
+
+  }
+
+}
 @media screen and (max-width:700px){
     
     .logo{
@@ -319,6 +399,16 @@ header ul li a:hover{
         width: 80%;
     }
 
+    /* Members */
+
+    .member img{
+
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+
+    }
+
 }
 
 @media screen and (max-width:425px){
@@ -347,5 +437,26 @@ header ul li a:hover{
     .team p{
 
         font-size: 0.9em;
+    }
+
+    /* Members */
+    .members{
+
+        flex-flow: column wrap;
+    }
+    .member{
+
+        width: 80%;
+    }
+    .member img{
+
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+
+    }
+    .member div p{
+
+        width: 90%;
     }
 }
