@@ -316,12 +316,20 @@ header ul li a:hover{
 @media screen and (max-width:768px){
 
     /* Members */
+    .members{
 
+        flex-flow: column wrap;
+    }
     .member{
 
-      width: 30%;
-      
+        width: 70%;
+        
+      }
+    .member div p{
+    
+        width: 90%;
     }
+  
     .member img{
 
       width: 100%;
@@ -400,7 +408,11 @@ header ul li a:hover{
     }
 
     /* Members */
+  
+    .member{
 
+        width: 80%;
+    }
     .member img{
 
         width: 100%;
