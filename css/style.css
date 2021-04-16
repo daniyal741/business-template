@@ -5,6 +5,11 @@
     font-family: VaniBold;
     src: url('../fonts/Vanib.ttf');
 }
+@font-face {
+    font-family: Athelas;
+    src: url('../fonts/Athelas.ttf');
+}
+
 
 *{
 
@@ -353,7 +358,6 @@ nav ul li a:hover{
 
     .contact{
 
-        background-color: #0A2D35;
         background-image: linear-gradient(to bottom right, #173C46, #24444D);
 
     }
@@ -373,9 +377,12 @@ nav ul li a:hover{
         text-align: center;
         color: white;
     }
-    .contact-container .heading{
+    .contact-container .heading h1{
 
-        font-family: 'Baskervville', serif;
+        font-family: 'Athelas', serif;
+        font-weight: 400;
+        font-size: 40px;
+        letter-spacing: 2px;
     }
     .contact-container .heading p{
 
@@ -397,17 +404,26 @@ nav ul li a:hover{
     form > *
     {
         display: block;
-        width: 48%;
-        margin: 1em 0;
+        width: 46%;
+        margin: 1em 0.5em;
         border: none;
         color: white;
-        border-bottom: 1px solid gray;
+        border-bottom: 1px solid #6D7C81;
         background-color: transparent;
         padding: 0.5rem 0;
+        outline: none;
+        font-family: myriad-pro, sans-serif;
+
     }
     
+    form > *:focus{
 
-        border: none;
+        border-bottom: 1px solid #ABAFB0;
+    }
+    form > input::selection{
+    
+        border-bottom: 1px solid #ABAFB0;
+
     }
     form input[type=email]{
     justify-self: flex-start;
@@ -415,13 +431,18 @@ nav ul li a:hover{
     form input[type=submit]{
 
         color: white;
-        background-color: orange;
+        background-color: #985137;
+        font-family: myriad-pro, sans-serif;
+        border: 1px solid #6E301A;
+        width: 25%;
         margin-left: auto;
-        width: 30%;
+        padding: 0.8rem 0;
     }
     form textarea{
 
         width: 100%;
+        resize: none;
+        
     }
 
 }
@@ -439,6 +460,18 @@ nav ul li a:hover{
         width: 100%;
         object-fit: cover;
         height: 200px;
+
+    }
+
+    /* CONTACT */
+
+    .contact-container .heading p{
+    
+        width: 80%;
+    }
+    .contact form{
+
+        width: 80%;
 
     }
 
@@ -478,6 +511,14 @@ nav ul li a:hover{
 
         width: 40%;
         padding: 1rem 0;
+    }
+
+    /* CONTACT */
+    
+    form > *{
+
+        margin: 1em 0em;
+
     }
 
 }
@@ -644,9 +685,14 @@ nav ul li a:hover{
 
     /* Contacts */
 
+    .contact-container .heading h1{
+    
+        font-size: 32px;
+        
+    }
     .contact-container .heading p{
     
-        width: 90%;
+        width: 100%;
     }
     .contact-container form{
 
