@@ -445,6 +445,99 @@ nav ul li a:hover{
         
     }
 
+    /* ABOUT - US */
+
+    .about-us{
+        display: flex;
+        padding: 5rem 0;
+        justify-content: center;
+        width: 95%;
+        margin: 5rem auto;
+    }
+    .about-img{
+
+        width: 48%;
+    }
+    .about-img img{
+    
+        width: 100%;
+    }
+    .about-detail{
+
+        width: 48%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-detail > div:nth-child(1){
+
+        outline: 1px solid gray;
+        width: 90%;
+        height: 90%;
+        margin: auto;
+
+    }
+    .about-detail .heading{
+
+        padding: 2rem 0;
+
+    }
+    .about-detail .heading h1{
+    
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    .about-detail .heading p{
+    
+        text-align: center;
+        width: 65%;
+        margin:auto;
+        padding: 0.6rem 0;
+
+    }
+    .about-detail .about-team{
+        display: flex;
+        width: 90%;
+        padding: 0 0 1rem 0;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+    .about-team .item{
+    
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        width: 31%;
+        text-align: center;
+        
+    }
+    .about-team .item img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .about-team .item button{
+        background-color: transparent;
+        border: 1px solid black;
+        margin: 1.5rem 0 0 0;
+        padding: 0.8rem;
+        font-size: 12px;
+        width: 130px;
+        position: relative;
+    }
+    .about-team .item button::before{
+        
+        content: '';
+        width: 1px;
+        height: 50px;
+        background-color: black;
+        top: -190%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-190%,50%);
+        position: absolute;
+    }
 }
 @media screen and (max-width:1024px){
 
@@ -475,6 +568,49 @@ nav ul li a:hover{
 
     }
 
+    /* About-Us */
+
+    .about-img{
+
+        width: 45%;
+    }
+    .about-detail{
+
+        width: 50%;
+    }
+    .about-detail .heading{
+
+        padding: 1rem 0;
+
+    }
+    .about-detail .about-team{
+    
+        padding: 1rem 0;
+    }
+    .about-detail .heading p{
+
+        padding: 0.5rem 0;
+
+    }
+    .about-team .item img{
+        width: 60px;
+        height: 60px;
+    }
+    .about-team .item button{
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.1rem;
+        font-size: 12px;
+        width: 110px;
+    }
+    .about-team .item button::before{
+    
+        height: 9px;
+        top: -50%;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%,50%);
+    
+    }
 }
 @media screen and (max-width:768px){
 
@@ -521,6 +657,35 @@ nav ul li a:hover{
 
     }
 
+    /* ABOUT-US */
+
+    .about-us{
+        flex-flow: column nowrap;
+        width: 100%;
+        padding: 2rem 0;
+        margin: 2rem 0;
+    }
+    .about-img{
+
+        width: 100%;
+    }
+    .about-team .item img{
+        width: 90px;
+        height: 90px;
+    }
+    .about-detail{
+        width: 100%;
+        margin-top: 3rem;
+    }
+    .about-detail > div:nth-child(1){
+    
+        width: 95%;
+    }
+
+    .about-detail .about-team{
+        
+        padding: 2rem 0;
+    }
 }
 @media screen and (max-width:700px){
     
