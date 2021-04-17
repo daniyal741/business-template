@@ -598,9 +598,9 @@ nav ul li a:hover{
     }
     .about-team .item button{
         margin-top: 0.5rem;
-        padding: 0.5rem 0.1rem;
+        padding: 0.5rem 0.5rem;
         font-size: 12px;
-        width: 110px;
+        width: max-content;
     }
     .about-team .item button::before{
     
@@ -872,5 +872,13 @@ nav ul li a:hover{
 
         width: 100%;
         margin: 1rem auto;
+    }
+
+    /* ABOUT-US */
+
+    .about-team .item button{
+    
+        font-size: 10px;
+        
     }
 }
