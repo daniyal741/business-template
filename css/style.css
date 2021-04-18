@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @font-face {
     font-family: VaniBold;
     src: url('../fonts/Vanib.ttf');
@@ -9,7 +9,6 @@
     font-family: Athelas;
     src: url('../fonts/Athelas.ttf');
 }
-
 
 *{
 
@@ -475,6 +474,7 @@ nav ul li a:hover{
         width: 90%;
         height: 90%;
         margin: auto;
+        
 
     }
     .about-detail .heading{
@@ -486,14 +486,18 @@ nav ul li a:hover{
     
         text-align: center;
         padding: 0.5rem 0;
+        font-size: 32px;
+        font-family: 'Athelas', serif;
+        font-weight: 400;
     }
     .about-detail .heading p{
     
         text-align: center;
-        width: 65%;
+        width: 70%;
         margin:auto;
-        padding: 0.6rem 0;
-
+        padding: 0.2rem 0;
+        font-family: 'Open Sans',sans-serif;
+        font-size: 14px;
     }
     .about-detail .about-team{
         display: flex;
@@ -513,17 +517,18 @@ nav ul li a:hover{
         
     }
     .about-team .item img{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
         border-radius: 50%;
     }
     .about-team .item button{
         background-color: transparent;
         border: 1px solid black;
-        margin: 1.5rem 0 0 0;
-        padding: 0.8rem;
-        font-size: 12px;
+        margin: 1rem 0 0 0;
+        padding: 0.75rem 0.3rem;
+        font-size: 14px;
         width: 130px;
+        font-family: myriad-pro, sans-serif;
         position: relative;
     }
     .about-team .item button::before{
@@ -537,6 +542,28 @@ nav ul li a:hover{
         z-index: -1;
         transform: translate(-190%,50%);
         position: absolute;
+    }
+}
+@media screen and (max-width:1200px){
+
+    .about-detail .heading{
+
+        padding: 0.8rem 0;
+
+    }
+    .about-detail .heading p{
+
+        width: 75%;
+    }
+    .about-team .item img{
+    
+        width: 90px;
+        height: 90px;
+    }
+    .about-team .item button{
+    
+        width: 120px;
+        font-size: 12px;
     }
 }
 @media screen and (max-width:1024px){
@@ -580,16 +607,21 @@ nav ul li a:hover{
     }
     .about-detail .heading{
 
-        padding: 1rem 0;
+        padding: 0.2rem 0;
 
+    }
+    .about-detail .heading h1{
+
+        font-size: 20px;
     }
     .about-detail .about-team{
     
-        padding: 1rem 0;
+        padding: 0rem 0;
     }
     .about-detail .heading p{
 
         padding: 0.5rem 0;
+        width: 95%;
 
     }
     .about-team .item img{
