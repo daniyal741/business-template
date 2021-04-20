@@ -612,6 +612,76 @@ nav ul li a:hover{
         color: wheat; 
 
     }
+
+    /* Footer */
+    footer{
+        color: white;
+    }
+    .footer-info{
+
+        background-color: #052830;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        padding: 2rem 0 3rem 0;
+        
+    }
+    .footer-info p{
+        padding: 1rem 0;
+        font-family: myriad-pro, sans-serif;
+
+    }
+    .footer-info > div{
+
+        width: 15%;
+    }
+    .footer-info ul{
+        list-style: none;
+    }
+    .footer-info ul li{
+    
+        padding: 0.2rem 0;
+    }
+    .footer-info a{
+    
+        color: white;
+        text-decoration: none;
+        font-family: myriad-pro, sans-serif;
+
+    }
+    .footer-info .phone-location{
+
+        padding: 1rem 0;
+    }
+    .footer-info .phone-location a{
+
+        font-size: 14px;
+        display: block;
+        padding: 0.4rem 0;
+    }
+    .phone-location img{
+
+        width: 16px;
+        position: relative;
+        bottom: -2px;
+    }
+    .footer-copyright{
+
+        background-color: black;
+        border-top: 1px solid white;
+      
+    }
+    .footer-copyright > div{
+        padding: 1rem 0;
+        width: 90%;
+        margin: auto;
+        
+    }
+    .footer-copyright p{
+
+        font-family: myriad-pro, sans-serif;
+
+    }
 }
 @media screen and (max-width:1200px){
 
