@@ -11,7 +11,7 @@
 }
 @font-face {
     font-family: Myriad-Pro;
-    src: url('../fonts/MYRIADPRO-REGULAR.OTF');
+    src: url('../fonts/MyriadPro-Light.otf');
 }
 
 *{
@@ -336,7 +336,7 @@ nav ul li a:hover{
 
         font-family: 'Myriad-Pro', sans-serif;
         color: white;
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 2px;
 
     }
