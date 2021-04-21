@@ -9,6 +9,10 @@
     font-family: Athelas;
     src: url('../fonts/Athelas.ttf');
 }
+@font-face {
+    font-family: Myriad-Pro;
+    src: url('../fonts/MYRIADPRO-REGULAR.OTF');
+}
 
 *{
 
@@ -44,7 +48,7 @@ html,body{
 
     font-size: 24px;
     text-transform: uppercase;
-    font-family: myriad-pro, sans-serif;
+    font-family: 'Myriad-Pro', sans-serif;
     font-style: normal;
     font-weight: 100;
     width: 90%;
@@ -172,7 +176,7 @@ nav ul li a{
     text-decoration: none;
     color: white;
     font-size: 14px;
-    font-family: myriad-pro, sans-serif;
+    font-family: 'Myriad-Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     padding: 1em 1em;
@@ -330,7 +334,7 @@ nav ul li a:hover{
     }
     .count p{
 
-        font-family: myriad-pro, sans-serif;
+        font-family: 'Myriad-Pro', sans-serif;
         color: white;
         font-size: 12px;
         letter-spacing: 2px;
@@ -411,7 +415,7 @@ nav ul li a:hover{
         background-color: transparent;
         padding: 0.5rem 0;
         outline: none;
-        font-family: myriad-pro, sans-serif;
+        font-family: 'Myriad-Pro', sans-serif;
 
     }
     
@@ -431,11 +435,11 @@ nav ul li a:hover{
 
         color: white;
         background-color: #985137;
-        font-family: myriad-pro, sans-serif;
         border: 1px solid #6E301A;
         width: 25%;
         margin-left: auto;
         padding: 0.8rem 0;
+        letter-spacing: 1px;
     }
     form textarea{
 
@@ -528,7 +532,7 @@ nav ul li a:hover{
         padding: 0.75rem 0.3rem;
         font-size: 14px;
         width: 130px;
-        font-family: myriad-pro, sans-serif;
+        font-family: 'Myriad-Pro', sans-serif;
         position: relative;
     }
     .about-team .item button::before{
@@ -628,7 +632,7 @@ nav ul li a:hover{
     }
     .footer-info p{
         padding: 1rem 0;
-        font-family: myriad-pro, sans-serif;
+        font-family: 'Myriad-Pro', sans-serif;
 
     }
     .footer-info > div{
@@ -646,25 +650,46 @@ nav ul li a:hover{
     
         color: white;
         text-decoration: none;
-        font-family: myriad-pro, sans-serif;
+        font-family: 'Myriad-Pro', sans-serif;
 
     }
     .footer-info .phone-location{
 
         padding: 1rem 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footer-info .phone-location span{
+
+        width: 100%;
+        
+
     }
     .footer-info .phone-location a{
 
-        font-size: 14px;
-        display: block;
-        padding: 0.4rem 0;
+        font-size: 12px;
+        padding: 0.4rem 0.2rem;
+        display: inline-block;
+        line-height: 1.3;
+
     }
     .phone-location img{
 
-        width: 16px;
+        width: 20px;
         position: relative;
-        bottom: -2px;
     }
+    .phone-location .phone{
+
+        bottom: 3px;
+    }
+    .phone-location .loc{
+
+        bottom: 4px;
+    }
+
     .footer-copyright{
 
         background-color: black;
@@ -679,7 +704,9 @@ nav ul li a:hover{
     }
     .footer-copyright p{
 
-        font-family: myriad-pro, sans-serif;
+        font-family: 'Myriad-Pro', sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
 
     }
 }
@@ -782,6 +809,22 @@ nav ul li a:hover{
         transform: translate(-50%,50%);
     
     }
+
+    /* footer */
+
+    .footer-info{
+    
+        flex-flow: row wrap;
+    }
+    .footer-info > div{
+    
+        width: 14%;
+    }
+    .footer-info .phone-location{
+
+        width: 20%;
+    }
+
 }
 @media screen and (max-width:768px){
 
@@ -856,6 +899,27 @@ nav ul li a:hover{
     .about-detail .about-team{
         
         padding: 2rem 0;
+    }
+
+    /* footer */
+
+    .footer-info{
+        justify-content: space-around;
+        
+    }
+    .footer-info > div{
+    
+        padding: 1rem 0;
+    }
+  
+    .footer-info .phone-location{
+
+        width: 100%;
+    }
+    .footer-info .phone-location span{
+
+        width: 40%;
+        margin-left: auto;
     }
 }
 @media screen and (max-width:700px){
@@ -952,7 +1016,15 @@ nav ul li a:hover{
 
         width: 50%;
         padding: 1rem 0;
-    }    
+    }   
+    
+    .footer-info > div{
+    
+        padding: 1rem 0;
+        width: 35%;
+        align-self: flex-end;
+        margin-left: auto;
+    }
 
 }
 
@@ -1051,5 +1123,23 @@ nav ul li a:hover{
     
         font-size: 10px;
         
+    }
+
+    /* footer */
+
+    .footer-info > div{
+    
+        width: 40%;
+    }
+    .footer-info .phone-location{
+
+        width: 100%;
+        flex-flow: column wrap;
+    }
+    .footer-info .phone-location span{
+
+        width: 80%;
+        margin: 0;
+        padding: 0.5rem 0;
     }
 }
